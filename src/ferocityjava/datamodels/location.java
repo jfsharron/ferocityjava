@@ -1,15 +1,35 @@
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 package ferocityjava.datamodels;
 
-/**
- *
- * @author jfsha
- */
+
 public class location {
     
+    private int locID;
+    private String location;
+    
+    public void setLocID(int p_locID){
+        locID = p_locID;
+    }
+    
+    public void setLocation(String p_location){
+        location = p_location;
+    }
+    
+    public int getLocID(){
+        return locID;
+    }
+    
+    public String getLocation(){
+        return location;
+    }
+    
+    @Override
+    public String toString(){
+        return "location Info{" + "locID=" + locID + ", location=" + 
+                location + '}';
+    }
+            
+    
 }
+
+
 
